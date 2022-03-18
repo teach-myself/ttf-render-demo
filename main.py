@@ -37,6 +37,7 @@ x = 0
 y = 0
 svg_paths = []
 for i, gl in enumerate(gls):
+    # calculate horizontal offset
     ax = tt['hmtx'].metrics[cname[i]][0]
 
     data = gl.data
@@ -49,5 +50,3 @@ for i, gl in enumerate(gls):
     svg_paths.extend(svg_path)
 
 print(' '.join(map(lambda x: x if isinstance(x, str) else str(x), svg_paths)))
-
-# print(tt['kern'].kernTables[0].kernTable)
