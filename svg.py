@@ -1,13 +1,3 @@
-"""
-"P" : {
-    MoveTo    : function(p, x, y)        {  p.cmds.push("M")  p.crds.push(x,y)  },
-    LineTo    : function(p, x, y)        {  p.cmds.push("L")  p.crds.push(x,y)  },
-    CurveTo   : function(p, a,b,c,d,e,f) {  p.cmds.push("C")  p.crds.push(a,b,c,d,e,f)  },
-    qCurveTo  : function(p, a,b,c,d)     {  p.cmds.push("Q")  p.crds.push(a,b,c,d)  },
-    ClosePath : function(p)              {  p.cmds.push("Z")  }
-},
-
-"""
 import math
 
 
